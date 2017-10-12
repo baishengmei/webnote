@@ -3,7 +3,7 @@
 + 传统的方式：如果输入‘有道’，键盘键入时，为youdao，当输入y时，onChange事件监听到该事件后，就会触发，发送请求；
 + 目的时：当中文输入时，当‘有道’字样输入完毕后，再发送请求；英文输入时，根据实时输入的内容，发送请求；
 #### 参考链接为：https://segmentfault.com/a/1190000008023476
-##### demo
+#####  demo
 ```
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { Component } from 'react';

@@ -29,5 +29,8 @@ git fetch 只是下载远程的库的内容，不做任何的合并git reset 把
 1. 中间操作，可能会遇到因为冲突，无法切换分支的提示：git add解决一下；
 2. 中间操作出现问题，如果想继续rebase，则使用git rebase --continue；不清楚时，使用git rebase --abort；
 3. 常用git log打印一下记录；
+#### 参考链接：
+1. [本地master，指向reset后的远程master节点](http://blog.csdn.net/lorkoy/article/details/50404407)
+2. [将分支的指定commit，提交到master分支上](http://blog.csdn.net/ybdesire/article/details/42145597)
 
 

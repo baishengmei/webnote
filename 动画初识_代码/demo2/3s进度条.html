@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Red laser bar loading progess demo</title>
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		
+		<script type='text/javascript'>
+		 $({property: 0}).animate({property: 100}, {
+			    duration: 3000,
+			    step: function() {
+			        var percentage = Math.round(this.property);
+
+			        $('#progress').css('width',  percentage+"%");
+
+			         if(percentage == 100) {
+           				 $("#progress").addClass("done");//完成，隐藏进度条
+       				 }
+			    }
+			});
+		</script>
+		<style type="text/css">
+			body{
+				margin:0;
+			}
+			#progress {
+				position:fixed;
+				height: 2px;
+				background:#b91f1f;
+				transition:opacity 500ms linear
+			}
+			#progress.done {
+				opacity:0
+			}
+			#progress span {
+				position:absolute;
+				height:2px;
+				-webkit-box-shadow:#b91f1f 1px 0 6px 1px;
+				-webkit-border-radius:100%;
+				opacity:1;
+				width:150px;
+				right:-10px;
+				-webkit-animation:pulse 2s ease-out 0s infinite;
+			}
+
+			@-webkit-keyframes pulse {
+				30% {
+					opacity:.6
+				}
+				60% {
+					opacity:0;
+				}
+				100% {
+					opacity:.6
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="progress">
+			<span></span>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Red laser bar loading progess demo</title>
+		<style type="text/css">
+			.circles {
+        width:180px; 
+        height:180px;
+        position:relative;
+      }
+      .outercircle {
+        width:180px; 
+        height:180px;
+        position:absolute;
+        z-index:1;
+        top:0;
+        left:0;
+      }
+      .circles:hover .outercircle {
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-duration: 10s;
+      }	
+      @-webkit-keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+        }
+
+      to {
+        -webkit-transform: rotate(360deg);
+
+        }
+      }
+
+      .middlecircle{
+        width:90px; 
+        height:90px;
+        position:absolute;
+        z-index:3;
+        top:45px; 
+        left:45px;
+      }
+      .circles:hover .middlecircle{
+        -webkit-animation-name: spinrev;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-duration: 5s;
+      }	
+	
+	
+      @-webkit-keyframes spinrev {
+      from {
+        -webkit-transform: rotate(0deg);
+        }
+
+      to {
+        -webkit-transform: rotate(-360deg);
+
+        }
+      }
+		</style>
+	</head>
+	<body>
+		<div class='circles'>
+			<img src='./outer.png' width='180' height='180' class='outercircle' alt='one' />
+			<img src='./middle.png' width='90' height='90' class='middlecircle' alt='two' />
+		</div>
+	</body>
+</html>

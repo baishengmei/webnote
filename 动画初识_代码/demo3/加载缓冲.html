@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Red laser bar loading progess demo</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script>
+        window.loadingStartTime = new Date()
+      </script>
+	</head>
+	<body>
+    <div class="loading" id="loading">
+      <div class="progress" id="progress">0%</div>
+    </div>
+    
+    <script>
+      var $loading = $('#loading')
+    var $progress = $('#progress')
+    var prg = 0
+
+    var timer = 0
+
+    progress([80, 90], [1, 3], 100)  // 使用数组来表示随机数的区间
+
+    window.onload = () => {
+      progress(100, [1, 5], 10, () => {
+        window.setTimeout(() => {  // 延迟了一秒再隐藏loading
+          $loading.hide()
+        }, 1000)
+      })
+    }
+
+    function progress (dist, speed, delay, callback) {
+      var _dist = random(dist)
+      var _delay = random(delay)
+      var _speed = random(speed)
+      window.clearTimeout(timer)
+      timer = window.setTimeout(() => {
+        if (prg + _speed >= _dist) {
+          window.clearTimeout(timer)
+          prg = _dist
+          callback && callback()
+        } else {
+          prg += _speed
+          progress (_dist, speed, delay, callback)
+        }
+
+        $progress.html(parseInt(prg) + '%')  // 留意，由于已经不是自增1，所以这里要取整
+        console.log(prg)
+      }, _delay)
+    }
+
+    function random (n) {
+      if (typeof n === 'object') {
+        var times = n[1] - n[0]
+        var offset = n[0]
+        return Math.random() * times + offset
+      } else {
+        return n
+      }
+    }
+    </script>
+	</body>
+</html>

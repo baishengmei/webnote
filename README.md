@@ -28,6 +28,7 @@ Data：2017.12.13
 + [我的博客园](https://home.cnblogs.com/)baishengmei
 + [hongkiat](https://www.hongkiat.com/blog/)
 + [w3cplus](https://www.w3cplus.com/)
++ [VUE中文社区](https://www.vue-js.com/)
 
 
 

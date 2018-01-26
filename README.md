@@ -3,6 +3,8 @@
 Data：2017.12.13
 
 -------------
+## 他人总结：
+##### [个人分享](https://juejin.im/post/5a0c1956f265da430a501f51?utm_source=gold_browser_extension)
 ## 前端参考网站：
 ##### 1. 博客类
 + [前端开发博客](http://caibaojian.com/fe-weekly-20171211.html)  
@@ -28,6 +30,9 @@ Data：2017.12.13
 + [我的博客园](https://home.cnblogs.com/)baishengmei
 + [hongkiat](https://www.hongkiat.com/blog/)
 + [w3cplus](https://www.w3cplus.com/)
++ [VUE中文社区](https://www.vue-js.com/)
++ [码蜂社](https://www.mafengshe.com/)
++ [cnode社区](http://cnodejs.org/)
 
 
 

@@ -11,6 +11,7 @@ Data：2017.12.13
   	+ 新浪微博账号登录
 + [someone的博客](http://blog.bloomca.me/)
 + [张鑫旭](http://www.zhangxinxu.com/wordpress/)
++ [单页应用解释的很不错](https://www.cnblogs.com/zhuzhenwei918/p/7421430.html)
 
 ##### 2. 网站类
 + [伯乐在线](http://web.jobbole.com/)

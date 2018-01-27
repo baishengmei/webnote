@@ -209,3 +209,6 @@ console.log(cat instanceof Cat); //true
 --------------------------- 
 
 *本文参考较多的文章是：[https://www.cnblogs.com/lurensang/p/6627093.html](https://www.cnblogs.com/lurensang/p/6627093.html)*
+
+#### 附件：![](picture/js_prototype.jpg)
+

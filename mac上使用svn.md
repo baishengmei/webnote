@@ -1,4 +1,4 @@
-## mac上安装并运行svn，连接有道svn步骤
+## mac上安装并运行svn，连接有*svn步骤
 ##### 说明： mac自带svn服务器端和客户端，采用命令行完成
 #### 配置svn的用户权限
 + [参考链接](http://blog.csdn.net/q199109106q/article/details/8655204)
@@ -44,7 +44,7 @@ svnserve -d -r /Users/apple/svn或者svnserve -d -r /Users/apple/svn/mycode
 
 ```
 利用svn checkout path其中path是服务器上的目录；
-svn checkout https://corp.youdao.com/svn/ydstatic/dsp_website/NewZhiXuan/
+svn checkout https://corp.yoouuddaaoo.com/svn/ydstatic/dsp_website/NewZhiXuan/
 ```
 
 
